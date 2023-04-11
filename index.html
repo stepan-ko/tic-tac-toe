@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Крестики-нолики</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<div id="board"></div>
+
+<div id="modal" class="hidden">
+    <div id="modal__window">
+        <h2></h2>
+        <div id="modal__buttons">
+            <button class="reset-size">Играть еще</button>
+        </div>
+    </div>
+</div>
+
+<div class="panel">
+  <input class="input input-row" type="number" max='7' min='2' value="3">
+  <span> X </span>
+  <input class="input input-col" type="number" max='7' min='2' readonly value="3">
+  
+  <button class="reset-size" >С начала</button>
+</div>
+
+<script src="logic.js"></script>
+<script src="ui.js"></script>
+</body>
+</html>
